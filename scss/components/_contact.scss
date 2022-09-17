@@ -1,0 +1,58 @@
+.contact {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  &-title {
+    box-sizing: border-box;
+    width: 15%;
+    & label {
+      box-sizing: border-box;
+      display: block;
+      line-height: 21px;
+    }
+  }
+  &-text {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    width: 85%;
+    & input,& textarea {
+      border: 1px solid #c8c8c8;
+      box-sizing: border-box;
+      padding: 10px;
+      line-height: 21px;
+      width: 100%;
+    }
+    & textarea {
+      height: 160px;
+      resize: none;
+    }
+  }
+  &-button {
+    text-align: center;
+    & input {
+      background-color: #24292e;
+      border: solid 1px #24292e;
+      color: #fff;
+      padding: 15px 0;
+      width: 200px;
+      cursor: pointer;
+      &:hover {
+        background: #fff;
+        color: #24292e;
+      }
+    }
+  }
+  @media screen and (max-width:600px) {
+    &-list {
+      flex-direction: column;
+    }
+    &-title {
+      width: 100%;
+    }
+    &-text {
+      width: 100%;
+    }
+  }
+}

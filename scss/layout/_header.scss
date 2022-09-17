@@ -1,0 +1,23 @@
+.header {
+  align-items: center;
+  display: flex;
+  height: 270px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 4%;
+  &-link {
+    display: block;
+  }
+  &-img {
+    display: block;
+  }
+  @media screen and (max-width:600px) {
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    &-title {
+      margin-top: 20px;
+    }
+  }
+}

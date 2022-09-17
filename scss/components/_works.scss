@@ -1,0 +1,23 @@
+.works {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  &-item {
+    width: 31%;
+    margin-bottom: 23px;
+  }
+  &-img {
+    width: 100%;
+  }
+  @media screen and (max-width:600px) {
+    &-list {
+      flex-direction: column;
+    }
+    &-item {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.nav {
+  &-list {
+    display: flex;
+    padding: 10px 0;
+  }
+  &-item {
+    font-size: 14.4px;
+    line-height: 21px;
+    margin-left: 30px;
+    &__insta {
+      margin-left: 30px;
+      & img {
+        display: block;
+        width: 20px;
+      }
+    }
+  }
+  &-link {
+    color: #24292E;
+    display: block;
+  }
+  @media screen and (max-width:600px) {
+    &-item {
+      font-size: 12.8px;
+      line-height: 20px;
+      margin-left: 20px;
+      &__insta {
+        margin-left: 20px;
+      }
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+}
